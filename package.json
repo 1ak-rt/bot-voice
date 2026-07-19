@@ -9,6 +9,7 @@
   "author": "sivvv0",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "node-pre-gyp": "^0.17.0",
     "@mapbox/node-pre-gyp": "^1.0.9",
     "@discordjs/opus": "^0.8.0",

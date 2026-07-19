@@ -1,9 +1,14 @@
 const { Client } = require('discord.js-selfbot-v13');
 const { joinVoiceChannel } = require("@discordjs/voice");
+require('dotenv').config();
 
 const client = new Client({ checkUpdate: false });
 
-const config = require(`${process.cwd()}/config.json`);
+const config = {
+    Token: process.env.TOKEN,
+    Guild: process.env.GUILD,
+    Channel: process.env.CHANNEL
+};
 
 client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}!`);
